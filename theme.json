@@ -1,0 +1,138 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"settings": {
+		"border": {
+			"radius": false,
+			"color": false,
+			"style": false,
+			"width": false
+		},
+		"color": {
+			"background": false,
+			"custom": false,
+			"text": false,
+			"customGradient": false,
+			"customDuotone": false,
+			"duotone": [],
+			"gradients": [],
+			"link": false,
+			"defaultGradients": false,
+			"defaultPalette": false,
+			"palette": [
+				{
+					"name": "Gainsboro",
+					"slug": "gainsboro",
+					"color": "#CFDBD5"
+				},
+				{
+					"name": "Alabaster",
+					"slug": "alabaster",
+					"color": "#E8EDDF"
+				},
+				{
+					"name": "Maize Crayola",
+					"slug": "maize-crayola",
+					"color": "#F5CB5C"
+				},
+				{
+					"name": "Copper",
+					"slug": "copper",
+					"color": "#B17B34"
+				},
+				{
+					"slug": "Eerie Black",
+					"name": "eerie-black",
+					"color": "#242423"
+				},
+				{
+					"slug": "Jet",
+					"name": "jet",
+					"color": "#333533"
+				}
+			]
+		},
+		"typography": {
+			"customFontSize": false,
+			"dropCap": false,
+			"textTransform": false,
+			"letterSpacing": false,
+			"lineHeight": false,
+			"fontStyle": true,
+			"fontWeight": true,
+			"textDecoration": true,
+			"fontFamilies": [
+				{
+					"fontFamily": "Times New Roman, serif",
+					"slug": "heading",
+					"name": "Font Heading"
+				},
+				{
+					"fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif",
+					"slug": "body",
+					"name": "Font Body"
+				}
+			],
+			"fontSizes": [
+				{
+					"slug": "xs",
+					"size": ".75rem",
+					"name": "Extra Small"
+				},
+				{
+					"slug": "small",
+					"size": "1rem",
+					"name": "Small"
+				},
+				{
+					"slug": "small-medium",
+					"size": "1.25rem",
+					"name": "small-medium"
+				},
+				{
+					"slug": "medium",
+					"size": "1.5rem",
+					"name": "medium"
+				},
+				{
+					"slug": "large",
+					"size": "2rem",
+					"name": "large"
+				},
+				{
+					"slug": "xl",
+					"size": "2.5rem",
+					"name": "XL"
+				},
+				{
+					"slug": "xxl",
+					"size": "3rem",
+					"name": "XXL"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "840px",
+			"wideSize": "1100px"
+		},
+		"spacing": {
+			"padding": false,
+			"margin": false,
+			"blockGap": true
+		},
+		"custom": {
+			"gap": "1.5rem",
+			"fontWeight": {
+				"body": 400,
+				"heading": 500
+			}
+		},
+		"blocks": {
+			"core/group": {
+				"color": {
+					"background": true
+				}
+			}
+		}
+	}
+}

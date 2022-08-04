@@ -1,0 +1,32 @@
+:root {
+	--color-bg: #E8EDDF;
+	--color-bg-alt: #CFDBD5;
+	--color-text-body: #333533;
+	--color-primary: #F5CB5C;
+	--color-secondary: #D3843F;
+	--color-dark: #242423;
+}
+
+html {
+	background: var( --color-bg );
+}
+
+body {
+	color: var(--color-text-body);
+}
+
+hr {
+	height: 0;
+	border: none;
+	border-bottom: .5rem solid var(--color-dark);
+}
+
+a:link,
+a:visited {
+	color: var( --color-primary );
+}
+
+#page {
+	max-width: 800px;
+	margin: auto;
+}
