@@ -7,6 +7,7 @@ const theme = {
 	context: filePath( '' ),
 	entry: {
 		'index': './src/js/index.tsx',
+		'editor': './src/js/editor.tsx',
 		'style': './src/css/style.scss',
 	},
 };

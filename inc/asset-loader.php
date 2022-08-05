@@ -136,7 +136,11 @@ function register_asset( string $handle, string $src, array $deps = [], array $a
  * @return void
  */
 function enqueue_asset( string $handle, string $src, array $deps = [], array $args = [] ) : void {
-	$handles = register_asset( $handle, $src, $deps, $args );
+	try {
+		$handles = register_asset( $handle, $src, $deps, $args );
+	} catch ( Exception $e ) {
+		$handles = [];
+	}
 
 	foreach ( $handles['scripts'] as $handle ) {
 		wp_enqueue_script( $handle );

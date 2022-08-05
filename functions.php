@@ -3,16 +3,31 @@
 namespace Test_Theme;
 
 require 'inc/asset-loader.php';
+require 'inc/blocks.php';
 
-add_action( 'after_setup_theme', __NAMESPACE__ . '\\setup' );
+add_action( 'init', __NAMESPACE__ . '\\setup' );
 
+/**
+ * Setup.
+ *
+ * @return void
+ */
 function setup() : void {
+	add_filter( 'wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_scripts', 10, 2 );
 	add_filter( 'script_loader_tag', __NAMESPACE__ . '\\do_extra_script_attrs', 10, 2 );
 
+	Blocks\setup();
+}
+
+/**
+ * Enqueue Scripts.
+ *
+ * @return void
+ */
+function enqueue_scripts() : void {
 	Asset_Loader\enqueue_asset( 'test-theme-main', 'index.js', [ 'wp-element' ], [ 'defer' => true ] );
 	Asset_Loader\enqueue_asset( 'test-theme-stylesheet', 'style.css' );
 }
-
 
 /**
  * Adds extra attributes to enqueued scripts e.g. async/defer

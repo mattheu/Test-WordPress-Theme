@@ -132,6 +132,7 @@
 			"callbacksLast": true,
 			"ignoreCase": true
 		} ],
-		"jsx-a11y/anchor-is-valid": [ "error" ]
+		"jsx-a11y/anchor-is-valid": [ "error" ],
+		"@typescript-eslint/no-explicit-any": [ "off" ]
 	}
 }

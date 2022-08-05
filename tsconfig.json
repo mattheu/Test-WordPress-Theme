@@ -1,15 +1,18 @@
 {
-		"compilerOptions": {
-			"module": "commonjs",
-			"noImplicitAny": true,
-			"removeComments": true,
-			"preserveConstEnums": true,
-			"sourceMap": true,
-			"jsx": "react",
-			"allowSyntheticDefaultImports": true,
-			"esModuleInterop": true
-		},
-		"files": [
-			"src/js/index.tsx",
-		]
-	}
+	"compilerOptions": {
+		"allowJs": true,
+		"module": "commonjs",
+		"noImplicitAny": true,
+		"removeComments": true,
+		"preserveConstEnums": true,
+		"sourceMap": true,
+		"jsx": "react",
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"target": "es5"
+	},
+	"include": [
+		"src/js",
+	]
+}

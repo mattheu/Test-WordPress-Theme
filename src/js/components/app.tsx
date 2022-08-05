@@ -2,14 +2,17 @@ import React from 'react';
 
 import testFunc from '../utils/test-func';
 
+interface AppProps {
+	greeting?: string;
+}
+
 /**
  * App component.
  */
-function App() {
-
+function App( { greeting = 'Hello' }: AppProps ) {
 	return (
 		<div>
-			{ 'Hello ' + testFunc( 'World' )  }
+			{ greeting + ' ' + testFunc( 'World' )  }
 		</div>
 	);
 }
